@@ -22,6 +22,10 @@ charts.forEach((chart) => {
     img.placeholder = chart.placeholder;
 
     const figcaption = document.createElement("figurecaption");
-    
+    figcaption.textContent = chart.caption;
+
+    figure.appendChild(img);
+    figure.appendChild(figcaption);
+    constainer.appendChild(figure);
 })
 })();
