@@ -13,9 +13,15 @@
     <h1>Television Data</h1>
     <p class="muted">Data charts go below. Replace each placeholder with your chart image.</p>
 
-    <div id="gallery" class="chart-grid">
-       
+    <!-- Buttons that switch between the grid and carousel views (see js/gallery.js) -->
+    <div class="view-toggle">
+      <button id="grid-view-btn" class="active">Grid View</button>
+      <button id="carousel-view-btn">Carousel View</button>
     </div>
+
+    <!-- Single container: gallery.js clears and rebuilds this with either the
+         grid markup or the carousel markup, so only one view exists at a time. -->
+    <div id="view-container"></div>
   </main>
 
   <script src="js/nav.js"></script>
